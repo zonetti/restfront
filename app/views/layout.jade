@@ -1,0 +1,31 @@
+doctype 5
+html
+  head
+    meta(charset='utf-8')
+    title RESTfront
+    meta(
+      name='description',
+      content='A minimalist tool to support development and testing of JSON-based APIs.'
+    )
+    meta(
+      name='viewport',
+      content='width=device-width, initial-scale=1.0'
+    )
+
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/css/codemirror.min.css')
+    link(rel='stylesheet', href='/css/lesser-dark.min.css')
+    link(rel='stylesheet', href='/css/prettify.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    block content
+    script(src='/js/jquery-1.7.2.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/codemirror.min.js')
+    script(src='/js/mode/javascript.min.js')
+    script(src='/js/prettify.min.js')
+    script(src='/js/custom.js')

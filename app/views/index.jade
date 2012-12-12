@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  
+  #top.container
+    h1 RESTfront
+      small.pull-right The minimalist JSON request tool
+
+  #content.container
+    .row
+      #control.span5
+        input#url(
+          type='text',
+          placeholder='URL. Example: http://twitter.com/status/user_timeline/twitter.json'
+        )
+
+        textarea#request-body
+          | {
+          |   "hello": "world",
+          |   "property": "value"
+          | }
+
+        #buttons.form-actions
+          button#GET.btn.req.btn-success GET
+          button.btn.req.btn-primary POST
+          button.btn.req.btn-info PUT
+          button.btn.req.btn-danger DELETE
+          button#clear.btn.pull-right(style="display: none;") Clear history
+
+        ul#history.nav.nav-tabs.nav-stacked
+
+      #output.span7
+        .progress.progress-striped.active
+          .bar(style='width: 0%')
+
+        pre.prettyprint.linenums
+          | {
+          |   "hello": "world",
+          |   "property": "value"
+          | }

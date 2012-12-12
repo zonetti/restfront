@@ -1,0 +1,17 @@
+#top {
+  position: relative;
+  padding: 20px 0;
+}
+#url {
+  width: 97%;
+}
+#buttons {
+  margin-top: 8px;
+  padding: 20px;
+}
+#buttons button {
+  margin: 3px 3px 0 0;
+}
+ul.nav li {
+  background: whiteSmoke;
+}
